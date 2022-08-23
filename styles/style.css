@@ -128,9 +128,11 @@ body {
     text-align: center;
     padding: 40px;
 }
+
 .side-card-set-width {
     min-height: 430px;
 }
+
 .side-card-container:nth-child(2) {
     margin-top: 40px;
 }
@@ -139,6 +141,7 @@ body {
     font-size: 24px;
     color: #FFFFFF;
 }
+
 .pot-player-contain {
     margin-top: 20px;
     display: flex;
@@ -195,16 +198,20 @@ input {
     justify-content: space-between;
     margin: 20px 0;
 }
+
 .side-cart-secend-p p {
     color: #AFAFAF;
 }
-.side-cart-secend-p p:nth-child(2){
+
+.side-cart-secend-p p:nth-child(2) {
     color: #FFFFFF;
     font-size: 20px;
 }
+
 .per-player-contain {
     margin: 20px;
 }
+
 .side-cart-secend-paragraph {
     display: flex;
     justify-content: space-between;
@@ -212,16 +219,19 @@ input {
     margin-top: 30px;
     color: wheat;
 }
-.side-cart-secend-paragraph p:nth-child(1){
+
+.side-cart-secend-paragraph p:nth-child(1) {
     color: #AFAFAF;
     font-size: 22px;
     font-weight: 600;
 }
-.side-cart-secend-paragraph p:nth-child(2){
+
+.side-cart-secend-paragraph p:nth-child(2) {
     color: #FF5E19;
     font-size: 26px;
     font-weight: 600;
 }
+
 /* side card style end */
 /* footer card style start */
 footer {
@@ -229,9 +239,74 @@ footer {
     margin-bottom: 40px;
     border-top: 1px solid #717171;
 }
+
 footer p {
     text-align: center;
     color: #FFFFFF;
     margin-top: 40px;
 }
+
 /* footer card style end */
+
+
+/* responsive section start */
+
+@media only screen and (max-width: 992px) {
+    .all-card-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-contant-flex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .select-btn {
+        padding: 12px 120px;
+    }
+    .header-info-img {
+        left: 0;
+    }
+    .header-img-right-one {
+        bottom: 0;
+        left: 0;
+    }
+    .header-img img {
+        width: 100%;
+    }
+    .header-info h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .header-info p {
+        font-size: 0.5rem;
+    }
+    .header-img-right-two {
+        top: 0;
+        left: 100px;
+    }
+    .hide-tab {
+        display: none;
+    }
+}
+@media only screen and (max-width: 612px){
+    .card-contant-flex {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header-img img {
+        display: none;
+    }
+    .header-info-img {
+        display: none;
+    }
+    .header-imge-right img:nth-child(1) {
+        width: 80%;
+        left: 50px;
+    }
+    .header-imge-right img:nth-child(2) {
+        display: none;
+    }
+    .header-info h1 {
+        font-size: 2rem;
+    }
+    .header-info p {
+        display: none;
+    }
+}
