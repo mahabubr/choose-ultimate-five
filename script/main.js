@@ -5,6 +5,12 @@ function displayName() {
     addNameToCart.innerText = '';
 
     for (let i = 0; i < titleName.length; i++) {
+
+        if (i > 4) {
+            alert('not more the five players. please select five');
+            break
+        }
+
         const span = document.createElement('div');
         span.innerHTML = `
         <div class="side-card-text-info">
@@ -14,13 +20,15 @@ function displayName() {
         `
         addNameToCart.appendChild(span);
     }
-
 }
 
 function onCLickBtn(element) {
     const titleNameElement = element.parentNode.parentNode.children[0];
     const titleNameElementText = titleNameElement.innerText;
     titleName.push(titleNameElementText)
+
+    element.setAttribute('disabled', true);
+    element.style.backgroundColor = 'gray'
 
     displayName()
 }
