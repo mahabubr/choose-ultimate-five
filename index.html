@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Ultimate Five</title>
+    <!-- css file link  -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- header section start -->
+    <header>
+        <div class="header-flex">
+            <div class="header-img">
+                <img src="./images/header/header-img.svg" alt="">
+            </div>
+            <div class="header-info">
+                <h1>Choose Your Ultimate Five</h1>
+                <img class="header-info-img" src="./images/header/Line-marker.svg" alt="">
+                <p>Association football, more commonly known as football or soccer, does not have a classical history.
+                    Notwithstanding any similarities to other ball games played around the world, FIFA has recognised
+                    that
+                    no historical connection exists with any game played in antiquity outside Europe
+                </p>
+            </div>
+            <div>
+                <img class='header-img-right-one' src="./images/header/card-psg.svg" alt="">
+                <img class='header-img-right-two' src="./images/header/soccer.svg" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+    <!-- main section start -->
+    <main class="card-section">
+        <section class="all-card-grid">
+            <div class="card-contant-flex">
+                <article class="card-container">
+                    <div class="card-img">
+                        <img src="./images/card-image/messi.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Lionel Messi</h3>
+                        <small>36 Goals · 120 Assist</small>
+                        <div>
+                            <button onclick="onCLickBtn(this)" class="select-btn">SELECT</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="card-container">
+                    <div class="card-img">
+                        <img src="./images/card-image/neymar.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Neymar Jr</h3>
+                        <small>36 Goals · 120 Assist</small>
+                        <div>
+                            <button onclick="onCLickBtn(this)" class="select-btn">SELECT</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="card-container">
+                    <div class="card-img">
+                        <img src="./images/card-image/mbappy.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Kylian Mbappé</h3>
+                        <small>36 Goals · 120 Assist</small>
+                        <div>
+                            <button onclick="onCLickBtn(this)" class="select-btn">SELECT</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="card-container">
+                    <div class="card-img">
+                        <img src="./images/card-image/machado.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Vítor Machado</h3>
+                        <small>36 Goals · 120 Assist</small>
+                        <div>
+                            <button onclick="onCLickBtn(this)" class="select-btn">SELECT</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="card-container">
+                    <div class="card-img">
+                        <img src="./images/card-image/ramos.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Sergio Ramos</h3>
+                        <small>36 Goals · 120 Assist</small>
+                        <div>
+                            <button onclick="onCLickBtn(this)" class="select-btn">SELECT</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="card-container">
+                    <div class="card-img">
+                        <img src="./images/card-image/sanches.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Renato Sanches</h3>
+                        <small>36 Goals · 120 Assist</small>
+                        <div>
+                            <button onclick="onCLickBtn(this)" class="select-btn">SELECT</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="card-container">
+                    <div class="card-img">
+                        <img src="./images/card-image/ronado.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Cristian Ronaldo</h3>
+                        <small>36 Goals · 120 Assist</small>
+                        <div>
+                            <button onclick="onCLickBtn(this)" class="select-btn">SELECT</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="card-container">
+                    <div class="card-img">
+                        <img src="./images/card-image/pele.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Mohamed Salah</h3>
+                        <small>36 Goals · 120 Assist</small>
+                        <div>
+                            <button onclick="onCLickBtn(this)" class="select-btn">SELECT</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="card-container">
+                    <div class="card-img">
+                        <img src="./images/card-image/robert.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Lewandowski</h3>
+                        <small>36 Goals · 120 Assist</small>
+                        <div>
+                            <button onclick="onCLickBtn(this)" class="select-btn">SELECT</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <article class="side-card-container">
+                    <div class="side-card-header-section">
+                        <h2>Selected - V</h2>
+                        <img src="./images/card-image-right/marker.png" alt="">
+                    </div>
+
+                    <div id="name-cart" class="side-card-text-info">
+                        <h3>1.</h3>
+                        <span>Lionel Messi</span>
+                    </div>
+
+                </article>
+                <article class="side-card-container">
+                    <div class="side-card-header-section">
+                        <h2>Budget</h2>
+                        <img src="./images/card-image-right/marker.png" alt="">
+                    </div>
+                    <div>
+                        <div class="pot-player-contain">
+                            <label for="">Per Player</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div>
+                            <button class="cart-btn">Calculate</button>
+                        </div>
+                    </div>
+                    <div class="side-cart-secend-div">
+                        <div class="side-cart-secend-p">
+                            <p>Player Expenses</p>
+                            <p>$5000</p>
+                        </div>
+                        <div class="pot-player-contain">
+                            <label for="">Manager</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="pot-player-contain">
+                            <label for="">Coach</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div>
+                            <button class="cart-btn">Calculate Total</button>
+                        </div>
+                        <div class="side-cart-secend-paragraph">
+                            <p>Total</p>
+                            <p>$11000</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!-- main section end -->
+    <!-- footer section start -->
+    <footer>
+        <p>
+            Copyright @ 2022 All Rights Reserved.
+        </p>
+    </footer>
+    <!-- footer section end -->
+
+    <script src="./script/main.js"></script>
+</body>
+
+</html>

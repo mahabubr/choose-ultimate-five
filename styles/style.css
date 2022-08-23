@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@400;600;800&display=swap');
+
+/* common style start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: #151515;
+}
+
+/* common style end */
+
+/* header style start */
+.header-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.header-img {
+    background-image: url(../images/header/header-img1.png);
+    background-repeat: no-repeat;
+}
+
+.header-info {
+    text-align: center;
+    width: 50%;
+}
+
+.header-info h1 {
+    color: #FF5E19;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 3.5rem;
+}
+
+.header-info-img {
+    position: relative;
+    left: 300px;
+}
+
+.header-info p {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.header-img-right-one {
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+}
+
+.header-img-right-two {
+    position: relative;
+    top: 125px;
+    background-image: url(../images/header/scoreer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* header style end */
+
+/* card style start */
+
+.card-section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.all-card-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card-container {
+    text-align: center;
+    border: 2px solid #434343;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-info {
+    padding: 30px;
+}
+
+.card-info h3 {
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.card-info small {
+    color: #B3B3B3;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.select-btn {
+    background-color: #015196;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 12px 80px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.card-contant-flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* card style end */
+
+/* side card style start */
+.side-card-container {
+    background-color: #000000;
+    text-align: center;
+    padding: 40px;
+}
+
+.side-card-container:nth-child(2) {
+    margin-top: 40px;
+}
+
+.side-card-header-section h2 {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.pot-player-contain {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side-card-text-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.side-card-text-info h3 {
+    color: #888888;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 30px;
+
+}
+
+.side-card-text-info span {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 25px;
+}
+
+label {
+    color: #AFAFAF;
+    margin-right: 20px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 8px;
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.cart-btn {
+    background-color: #015196;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 12px 80px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.side-cart-secend-p {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.side-cart-secend-p p {
+    color: #AFAFAF;
+}
+.side-cart-secend-p p:nth-child(2){
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.per-player-contain {
+    margin: 20px;
+}
+.side-cart-secend-paragraph {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    color: wheat;
+}
+.side-cart-secend-paragraph p:nth-child(1){
+    color: #AFAFAF;
+    font-size: 22px;
+    font-weight: 600;
+}
+.side-cart-secend-paragraph p:nth-child(2){
+    color: #FF5E19;
+    font-size: 26px;
+    font-weight: 600;
+}
+/* side card style end */
+/* footer card style start */
+footer {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    border-top: 1px solid #717171;
+}
+footer p {
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+/* footer card style end */
