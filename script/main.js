@@ -50,10 +50,11 @@ function displayName() {
 
         const playerExpenceElement = document.getElementById('player-expense-total');
         playerExpenceElement.innerText = playerCalc;
-
+        
         isNanAlert(perPlayerValue, playerExpenceElement)
     })
-
+    
+    // calculate all value form player list
     document.getElementById('calculate-total-btn').addEventListener('click', function () {
         const managerField = inputFieldValue('manager-field');
         const coachField = inputFieldValue('coach-field');
