@@ -5,10 +5,12 @@ function displayName() {
     addNameToCart.innerText = '';
 
     for (let i = 0; i < titleName.length; i++) {
-        const span = document.createElement('span');
+        const span = document.createElement('div');
         span.innerHTML = `
-        <h3>${i + 1}</h3>
-        <span class="side-card-title-name">${titleName[i]}</span>
+        <div class="side-card-text-info">
+        <h3 class="side-card-text-info-num">${i + 1}</h3>
+        <h4 class="side-card-title-name">${titleName[i]}</h4>
+        </div>
         `
         addNameToCart.appendChild(span);
     }

@@ -146,12 +146,12 @@ body {
 
 .side-card-text-info {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     margin-top: 20px;
 }
 
-.side-card-text-info h3 {
+.side-card-text-info-num {
     color: #888888;
     font-family: 'Berkshire Swash', cursive;
     font-size: 30px;
