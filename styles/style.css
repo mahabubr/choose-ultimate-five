@@ -294,7 +294,7 @@ footer p {
         display: none;
     }
     .header-info-img {
-        display: none;
+        left: 20px;
     }
     .header-imge-right img:nth-child(1) {
         width: 80%;

@@ -17,6 +17,12 @@ function isNanAlert(perPlayerValue, playerExpenceElement) {
     }
 }
 
+// disabled button when it will added
+function disabledBtn(disable) {
+    disable.setAttribute('disabled', true);
+    disable.style.backgroundColor = 'gray';
+}
+
 // names array
 const titleName = [];
 
@@ -24,14 +30,13 @@ const titleName = [];
 function displayName() {
     const addNameToCart = document.getElementById('name-cart');
     addNameToCart.innerText = '';
+    // alert when length is five
+    if (titleName.length > 5) {
+        titleName.length--
+        alert('not more the five players. please select five');
+    }
     // get name array
     for (let i = 0; i < titleName.length; i++) {
-
-        // alert on then added name will be five
-        if (i > 4) {
-            alert('not more the five players. please select five');
-            break
-        }
         // create element on side box
         const span = document.createElement('div');
         span.innerHTML = `
@@ -41,7 +46,6 @@ function displayName() {
         </div>
         `
         addNameToCart.appendChild(span);
-
     }
     // calculate value form player list
     document.getElementById('calculate-btn').addEventListener('click', function () {
@@ -50,10 +54,10 @@ function displayName() {
 
         const playerExpenceElement = document.getElementById('player-expense-total');
         playerExpenceElement.innerText = playerCalc;
-        
+
         isNanAlert(perPlayerValue, playerExpenceElement)
     })
-    
+
     // calculate all value form player list
     document.getElementById('calculate-total-btn').addEventListener('click', function () {
         const managerField = inputFieldValue('manager-field');
@@ -76,9 +80,7 @@ function onCLickBtn(element) {
     const titleNameElement = element.parentNode.parentNode.children[0];
     const titleNameElementText = titleNameElement.innerText;
     titleName.push(titleNameElementText)
-    // disabled button when it will added
-    element.setAttribute('disabled', true);
-    element.style.backgroundColor = 'gray'
 
+    disabledBtn(element)
     displayName()
 }
