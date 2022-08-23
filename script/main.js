@@ -1,8 +1,20 @@
 // common function for inpur values
 function inputFieldValue(inputId) {
     const inputFieldElement = document.getElementById(inputId);
-    const inputFieldElementString = inputFieldElement.value;
-    return inputFieldElementString;
+    const inputFieldString = inputFieldElement.value;
+    const inputField = parseFloat(inputFieldString)
+    return inputField;
+}
+
+// common function for alert inpur field
+function isNanAlert(perPlayerValue, playerExpenceElement) {
+    if (isNaN(perPlayerValue)) {
+        alert('please input a number');
+        playerExpenceElement.style.visibility = 'hidden'
+    }
+    else {
+        playerExpenceElement.style.visibility = 'visible'
+    }
 }
 
 // names array
@@ -31,21 +43,30 @@ function displayName() {
         addNameToCart.appendChild(span);
 
     }
-
+    // calculate value form player list
     document.getElementById('calculate-btn').addEventListener('click', function () {
-        const perPlayerValue = inputFieldValue('per-player-field')
+        const perPlayerValue = inputFieldValue('per-player-field');
         const playerCalc = perPlayerValue * titleName.length;
 
         const playerExpenceElement = document.getElementById('player-expense-total');
         playerExpenceElement.innerText = playerCalc;
 
-        if (isNaN(perPlayerValue)) {
-            alert('please input a number');
-            playerExpenceElement.style.visibility = 'hidden'
-        }
-        else {
-            playerExpenceElement.style.visibility = 'visible'
-        }
+        isNanAlert(perPlayerValue, playerExpenceElement)
+    })
+
+    document.getElementById('calculate-total-btn').addEventListener('click', function () {
+        const managerField = inputFieldValue('manager-field');
+        const coachField = inputFieldValue('coach-field');
+        const perPlayerValue = inputFieldValue('per-player-field');
+
+        const playerCalc = perPlayerValue * titleName.length;
+        const managerAndCoach = managerField + coachField + playerCalc;
+
+        const allExpenceTotal = document.getElementById('all-expence-total');
+        allExpenceTotal.innerText = managerAndCoach;
+
+        isNanAlert(managerField, allExpenceTotal)
+        isNanAlert(coachField, allExpenceTotal)
     })
 }
 displayName()
